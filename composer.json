@@ -1,0 +1,31 @@
+{
+    "name": "magenit/magento2-customers-import",
+    "description": "Import Customers from Json or CSV",
+    "homepage": "https://github.com/mage-nitin/customer-import",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+        "php": "~7.2.0||~8.1.0||~8.3.0",
+        "magento/framework": "102.0.*|103.0.*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Nitin Gautam",
+            "email": "mage.nitin01@gmail.com",
+            "role": "Tech Lead"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/mage-nitin/customer-import/issues"
+    },
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "MageNit\\CustomersImport\\": ""
+        }
+    }
+}

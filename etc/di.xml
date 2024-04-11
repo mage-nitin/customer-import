@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="ngCustomersImport" xsi:type="object">MageNit\CustomersImport\Console\Command\CustomersCreateCommand</item>
+            </argument>
+        </arguments>
+    </type>
+    <preference for="MageNit\CustomersImport\Api\Data\CustomerImportInputInterface" type="MageNit\CustomersImport\Model\Data\CustomerImportInput" />
+</config>
