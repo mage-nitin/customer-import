@@ -271,7 +271,7 @@ class CustomerImport
      *
      * @return string[]
      */
-    private function getAllowedFileExtension(): array
+    public function getAllowedFileExtension(): array
     {
         return $this->customerImportInputInterface->getAllowedFileExtensions();
     }
